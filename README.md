@@ -32,7 +32,7 @@ This Part has 4 Google Colab Notebooks. The first three each aim to answer the f
 
 All the Data thus compiled can be fetched directly into an existing regressor model (an example of which we've provided below) or be used in tandem with the IBB Pricing tool available for easy automation.  
 
-Link to example Price Regressor Model: https://colab.research.google.com/drive/1Qs4bowVTbJdElrpEfN6ytHjTF-5_fibU?usp=sharing (An accuracy of )
+Link to example Price Regressor Model: https://colab.research.google.com/drive/1Qs4bowVTbJdElrpEfN6ytHjTF-5_fibU?usp=sharing (Achieves An accuracy of 0.9737330457584334 and 0.9134720337827984 on training and testing data correspondingly)    
 
 ## Building the Web App
 Flask is used to render the HTML files inside the template directory and send the uploaded image to run the models on it. The deeplearning.py files consist of the function definitions for this task.
