@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+   <div class="container">
+      <hr><br>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="input-group">
+          <input type="file" class="form-control" name="image_name" required>
+          <input type="submit" value="Upload" class="btn btn-outline-secondary">
+        </div>
+      </form>
+   </div>
+
+   {% if upload %}
+      <div class="container">
+        <img class ="rounded float-left img-fluid" src="static/damage/{{upload_image}}" alt="">
+        <p style="margin-top: 10px">{{msg}}</p>
+        <a href="/" class="btn btn-primary">Go Back</a>
+      </div>
+   {% endif %}
+
+{% endblock %}

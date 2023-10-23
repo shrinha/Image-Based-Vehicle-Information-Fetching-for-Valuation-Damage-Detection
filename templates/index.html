@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+   <div class="container">
+      <hr><br>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="input-group">
+          <input type="file" class="form-control" name="image_name" required>
+          <input type="submit" value="Upload" class="btn btn-outline-secondary">
+        </div>
+      </form>
+   </div>
+
+   {% if upload %}
+      <div class="container">
+        <table>
+         <tr>
+            <td>
+               <img class ="rounded float-left img-fluid" src="static/upload/{{upload_image}}" alt="">
+            </td>
+            <td>
+               <img class ="rounded float-right img-fluid" src="static/predict/{{upload_image}}" alt="">
+            </td>
+         </tr>
+         <tr>
+            <td class ="rounded float-left img-fluid">Car Brand</td>
+            <td class ="rounded float-right img-fluid">{{info[0]}}</td>
+         </tr>
+         <tr>
+            <td class ="rounded float-left img-fluid">Car Model</td>
+            <td class ="rounded float-right img-fluid">{{info[1]}}</td>
+         </tr>
+         <tr>
+            <td class ="rounded float-left img-fluid">Is_Financed</td>
+            <td class ="rounded float-right img-fluid">{{info[5]}}</td>
+         </tr>
+         <tr>
+            <td class ="rounded float-left img-fluid">Cubic Capacity</td>
+            <td class ="rounded float-right img-fluid">{{info[4]}}</td>
+         </tr>
+         <tr>
+            <td class ="rounded float-left img-fluid">Fuel Type</td>
+            <td class ="rounded float-right img-fluid">{{info[3]}}</td>
+         </tr>
+        </table>
+        <a href="/damage" class="btn btn-primary">Check Damage Severity</a>
+      </div>
+   {% endif %}
+
+{% endblock %}
