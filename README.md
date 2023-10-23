@@ -5,7 +5,7 @@ The Challenge aimed at identifying areas of improvement, coming up with innovati
 ## Abstract & Idea
 During the case study round, we identified an area of improvement in the valuation domain. TVS Credit, an NBFC focusing primarily on vehicle and used vehicle loans, did have a system for vehicle valuation on its website. However, it depended heavily on the need to know about the specifics of the vehicle, such as its variant and model, before going forward. Subsequently, an IBB Price is returned, which is highly static and does not capture market dynamics well. Moreover, there's no such system for mobile applications where cameras can be used "on the fly" to check the vehicle's damage/condition.
 
-Further explanation of the topic, its motivation, and a walkthrough can be found in the Presentation inside the Abstract & Ideas Directory.  
+Further explanation of the topic, its motivation, and a walkthrough can be found in the Presentation inside the Abstract & Presentation Directory.  
 The rough framework of the model is below.
 
 
